@@ -1,6 +1,23 @@
-h1{
-    color: aquamarine;
-}
-body p{
-    color: brown;
-}
+*
+{ 
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+ }
+
+ #logo
+ {
+     margin-right: auto;
+     margin-left: 10px;
+     margin-top: 5px;
+ }
+ 
+ #logo img
+ {
+     width: 150px;
+     height: auto;
+     object-fit: cover;
+ }
+
+
+
