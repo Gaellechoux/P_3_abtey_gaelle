@@ -12,22 +12,23 @@
 <body>
 
     <header>
-        <div id="logo"><img src="images/ohmyfood.png"  alt="logo ohmyfood"/></div>
+        <div class="header__image"><img src="images/ohmyfood.png"  alt="logo ohmyfood"/></div>
     </header>
 
 
     <main>
 
         
-        <form method="post">
+        <div class="city">
                      
-            <i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Paris, Belleville" />
+            <i class="fas fa-map-marker-alt"></i>
+            <h2 class="city__text">Paris, Belleville</h2>
          
-        </form>
+        </div>
 
         <section class="reservation">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>
+            <h1 class="reservation__title">Réservez le menu qui vous convient</h1>
+            <p class="reservation__paragraph">
                 Découvret des restaurants d'exception, séléctionnés pas nos soins.
             </p>
 
@@ -38,28 +39,28 @@
         </section>
 
         <section class="working">
-             <h1>Fontionnement</h1>
-             <button class="working__choose">
+             <h1 class="working__title">Fontionnement</h1>
+             <div class="working__choose">
                  Choisissez un restaurant
 
-             </button>
+             </div>
 
-             <button class="working__compound">
+             <div class="working__compound">
                  Composez votre menu
 
                  
-            </button>
+             </div>
 
-            <button class="working__taste">
+            <div class="working__taste">
                 Dégustez au restaurant
                  
-            </button>
+            </div>
         </section>
 
  <!-- Div conteneur3 -->
 
         <section class="restaurants">
-            <h1 id="restaurants_title">Restaurants</h1>
+            <h1 class="restaurants_title">Restaurants</h1>
         
        
         <div class="restaurants_list">
@@ -105,19 +106,16 @@
 
     <footer>
         <div class="customer-services">
-        <div id="customer-services__a-propos">
-          <strong>ohmyfood</strong> 
+          <h1 class="customer-services__title">ohmyfood</h1> 
   
-          <ul>
+          <ul class="customer-services__list">
             <li><a href="#">Proposer un restaurant</a></li>
             <li><a href="#">Devenir partenaire</a></li>
             <li><a href="#">Mention légales</a></li>
-            <li><a href="#">contact</a></li>
+            </li><a href="#">contact</a></li>
   
           </ul>     
-       </div>
-  
-     
+   
     </div>
       </footer>
 
