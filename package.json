@@ -1,0 +1,19 @@
+{
+  "name": "p_3_abtey_gaelle",
+  "version": "1.0.0",
+  "description": "Project ohmyfood.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaellechoux/P_3_abtey_gaelle.git"
+  },
+  "author": "Abtey Gaelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaellechoux/P_3_abtey_gaelle/issues"
+  },
+  "homepage": "https://github.com/Gaellechoux/P_3_abtey_gaelle#readme"
+}
