@@ -1,0 +1,38 @@
+*
+{ 
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+ }
+/*Polices personnalisées */
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: url(police/Shrikhand-Regular.ttf);
+    font-display: auto;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(police/Roboto-Bold.ttf);
+    font-display: auto;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(police/Roboto-Bold.ttf); 
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(police/Roboto-Light.ttf);
+    font-display: auto;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(police/Roboto-Medium.ttf);
+    font-display: auto;
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(police/Roboto-Thin.ttf);
+    font-display: auto;
+}
