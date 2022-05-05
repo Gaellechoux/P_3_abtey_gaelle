@@ -1,43 +1,40 @@
-body{
-    margin: 0px;
-    font-family: Roboto-Regular, sans-serif;
-}
-
-header{
-    text-align: center;
-    box-shadow: 0px 10px 50px gray;
-    padding: 10px;
-}
-
-.header__image
-{
-    margin-right: auto;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-.header__image img
-{
-    width: 150px;
-    height: auto;
-    object-fit: cover;
-}
-
 .city
+{   display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 6px;
+    &__text{
+    font-family: "Roboto-Medium", "cursive";
+    }
+}
+.explore
 {
    text-align: center;
-    background-color: gray;
+   background-color: #fafafa;
+   padding: 45px;
+   margin: 0px;
+}
+.explore__text
+{
+   font-family: "Roboto-Bold", cursive;
+}
+
+.explore h1{
+    margin: 0px;
+}
+.explore button{
+    color: white;
+    font-size: large;
     padding: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 3px 4px lightgray;
+    border: none;
+    background: linear-gradient($color-secondary, $color-primary);
 }
-.city__text
-{
-   font-family: Roboto-Bold;
+.contenaire{
+    display: flex;
+    justify-content: space-evenly;
 }
-
-.reservation
-{
-   text-align: center;
-   background-color: #F2F2F2;
-   margin-top: 0;
-}
-
