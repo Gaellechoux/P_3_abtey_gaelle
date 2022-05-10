@@ -35,25 +35,21 @@
 
         </section>
 
-        <section class="working">
-             <h1 class="working__title">Fontionnement</h1>
-             <div class="contenaire">
-             <div class="working__choose">
-                 Choisissez un restaurant
-
-             </div>
-
-             <div class="working__compound">
-                 Composez votre menu
-
-                 
-             </div>
-
-            <div class="working__taste">
+        <section class="function">
+             <h1 class="function__title">Fontionnement</h1>
+              <ol>
+                  <li class="function__choose"><i class="fas fa-mobile-alt"></i>
+                        Choisissez un restaurant
+                  </li>
+                  <li class="function__compound">
+                    <i class="fas fa-list-ul"></i>
+                      Composez votre menu    
+                  </li>
+            <li class="function__taste">
+              <i class="fas fa-store"></i>
                 Dégustez au restaurant
-                 
-            </div>
-          </div>
+            </li>
+          </ol>
         </section>
 
  <!-- Div conteneur3 -->
@@ -62,38 +58,51 @@
             <h1 class="restaurants_title">Restaurants</h1>
         
        
-        <div class="restaurants_list">
+        <div class="restaurants__list">
 
-          <div class="restaurant__card">
+          <div class="restaurants__card new">
             
-            <a><img src="images/la_palette_du-gout.jpg" alt="restaurant" /></a> 
-            <p>Vieux Port</p>
-           
+            <a href="lapalettedugout.html"><img src="images/la_palette_du-gout.jpg" alt="restaurant" />
+            <div class="restaurants__description">
+              <div class="restaurants__name">La palette du goût<i class="fas fa-heart"></i></div><br />
+              <div class="restaurants__place">Ménilmontant</div><br />
+            </a> 
+           </div>
           </div>
 
 
-          <div class="restaurant__card">
+          <div class="restaurants__card new">
             
-            <a href="">
+            <a href="#">
             <img src="images/la_note_anchantee.jpg" alt="restaurant" />
-            <p>Vieux Port</p></a> 
+            <div class="restaurants__description">
+              <div class="restaurants__name">La palette du goût<i class="fas fa-heart"></i></div><br />
+              <div class="restaurants__place">Ménilmontant</div><br />
+              </a> 
+            </div>
+          </div>
+
+          <div class="restaurants__card new">
+            
+            <a href="#"> 
+            <img src="images/a_la_francaise.jpg" alt="restaurant" />
+            <div class="restaurants__description">
+              <div class="restaurants__name">La palette du goût<i class="fas fa-heart"></i></div><br />
+              <div class="restaurants__place">Ménilmontant</div><br />
+              </a> 
+            </div>
            
           </div>
 
-          <div class="restaurant__card">
+          <div class="restaurants__card new">
             
-            <a>
-            <img src="images/a_la_francaise.jpg" alt="restaurant" /></a> 
-            <p>Vieux Port</p>
-           
-          </div>
-
-          <div class="restaurant__card">
-            
-            <a>
-            <img src="images/le_delice_des_sens.jpg" alt="restaurant" /></a> 
-            <p>Vieux Port</p>
-           
+            <a href="#">
+            <img src="images/le_delice_des_sens.jpg" alt="restaurant" />
+            <div class="restaurants__description">
+              <div class="restaurants__name">La palette du goût<i class="fas fa-heart"></i></div><br />
+              <div class="restaurants__place">Ménilmontant</div><br />
+             </a>  
+            </div>
           </div>
 
         </div>
@@ -103,15 +112,15 @@
 
     <!-- Footer -->    
 
-    <footer>
-        <div class="customer-services">
-          <h1 class="customer-services__title">ohmyfood</h1> 
+    <footer class="footer">
+        <div class="footer__services">
+          <h1 class="footer__title">ohmyfood</h1> 
   
-          <ul class="customer-services__list">
-            <li><a href="#">Proposer un restaurant</a></li>
-            <li><a href="#">Devenir partenaire</a></li>
+          <ul class="footer__list">
+            <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
             <li><a href="#">Mention légales</a></li>
-            </li><a href="#">contact</a></li>
+            <li><a href="#">Contact</a></li>
   
           </ul>     
    

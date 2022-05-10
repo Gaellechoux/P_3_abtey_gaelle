@@ -1,0 +1,43 @@
+main{
+    background-color: $lightgray;
+}
+.menu__image{
+    & img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center bottom;
+    }
+}
+
+.restaurant{
+    margin-top: -49px;
+    position: relative;
+    & h2{
+        font-family: 'Shrikhand-Regular';
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 40px 40px 0 0;
+        background-color: $lightgray;
+        margin-top: 0;
+        padding: 32px;
+        & .fas{
+            font-size: 26px;
+            font-weight: 50;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+                   
+            
+            & .fas:hover { 
+            color: transparent; 
+            background-image: linear-gradient($color-primary, $color-secondary);  
+            opacity: 4;
+            }
+        
+
+
+
+    }
+}

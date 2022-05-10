@@ -1,6 +1,13 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+
 @import "./layouts/header";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./layouts/function";
+@import "./layouts/container";
+@import "./layouts/footer";
+
+
+@import "./pages/lapalettedugout";

@@ -1,0 +1,31 @@
+.footer{
+    background-color: rgb(71, 70, 70);
+    padding: 15px;
+        & .footer__services{
+            margin-left: 5px;
+    
+            & .footer__list{
+                font-family: "Roboto-Bold"; 
+
+               padding: 0;
+            
+            }
+
+            & .footer__title{ 
+            font-family: 'Shrikhand-Regular';
+            font-size: 18px;
+            color: $colour-white;
+            }
+
+                & li a{
+                    color: $colour-white;
+                    & .fa-hands-helping{
+                        font-size: 11px;
+                    }
+                    & .fas{
+                        margin-right: 11px;
+                    }
+        }
+
+    }
+}

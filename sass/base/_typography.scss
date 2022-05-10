@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     gap: 18px;
-    background-color: #f3f3f3;
+    background-color: $lightgrey;
     text-align: center;
     padding: 6px;
     &__text{
@@ -13,28 +13,25 @@
 .explore
 {
    text-align: center;
-   background-color: #fafafa;
+   background-color: $lightgray;
    padding: 45px;
    margin: 0px;
+   margin-bottom: 40px;
 }
 .explore__text
 {
-   font-family: "Roboto-Bold", cursive;
+   font-family: "Roboto-Bold", "cursive";
 }
 
 .explore h1{
     margin: 0px;
 }
 .explore button{
-    color: white;
+    color: $colour-white;
     font-size: large;
     padding: 15px;
     border-radius: 25px;
-    box-shadow: 1px 3px 4px lightgray;
+    @include function-shadow;
     border: none;
     background: linear-gradient($color-secondary, $color-primary);
-}
-.contenaire{
-    display: flex;
-    justify-content: space-evenly;
 }
