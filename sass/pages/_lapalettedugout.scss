@@ -1,43 +1,86 @@
-main{
+.dugout{
     background-color: $lightgray;
-}
+ }
 .menu__image{
-    & img{
+     & img{
         width: 100%;
         object-fit: cover;
-        object-position: center bottom;
+         object-position: center bottom;
     }
 }
 
 .restaurant{
     margin-top: -49px;
     position: relative;
-    & h2{
-        font-family: 'Shrikhand-Regular';
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-radius: 40px 40px 0 0;
-        background-color: $lightgray;
-        margin-top: 0;
-        padding: 32px;
-        & .fas{
-            font-size: 26px;
-            font-weight: 50;
-            background-clip: text;
-            -webkit-background-clip: text;
+        & h2{
+           font-family: 'Shrikhand-Regular';
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 40px 40px 0 0;
+            background-color: $lightgray;
+            margin-top: 0;
+            padding: 32px;
+                & .fas{
+                font-size: 26px;
+                font-weight: 50;
+                background-clip: text;
+                -webkit-background-clip: text;
+                transition: transform 400ms, background-image 300ms 150ms;
+                }
+     
+                & .fas:hover { 
+                color: transparent; 
+                background-image: linear-gradient($color-primary, $color-secondary);  
+                opacity: 4;
+                }
+
         }
+}
 
-                   
-            
-            & .fas:hover { 
-            color: transparent; 
-            background-image: linear-gradient($color-primary, $color-secondary);  
-            opacity: 4;
+.contenaire{
+    display: flex;
+     width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+                        
+                                    
+        @media (max-width: 800px){
+            flex-direction: column;
+        }  
+}
+
+.menu{
+    margin: 15px;
+        & .menu__card{
+            background-color: $colour-white;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 15px;
+            & .menu-entrees__description{
+               
+                font-size: 14px;
+               
             }
+            & .menu-entrees__name{
+                font-weight: bolder;
+            }
+
+            & a{
+                color: black;
+            }
+        }
+}
+
+.order{
+    text-align: center;
+    & button{
         
-
-
-
+        @include btn
+        
     }
+}
+ V
+.footer{
+    @include footer
 }

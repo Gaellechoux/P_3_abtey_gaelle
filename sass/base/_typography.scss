@@ -27,11 +27,5 @@
     margin: 0px;
 }
 .explore button{
-    color: $colour-white;
-    font-size: large;
-    padding: 15px;
-    border-radius: 25px;
-    @include function-shadow;
-    border: none;
-    background: linear-gradient($color-secondary, $color-primary);
+    @include btn
 }

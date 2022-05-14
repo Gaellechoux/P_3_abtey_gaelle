@@ -20,6 +20,7 @@ width: 100%;
         width: 100%;
         margin: 10px;
         border-radius: 15px;
+        
               & a{
                  color: black; 
               }
@@ -50,24 +51,19 @@ width: 100%;
                      left: 90px;
                      font-size: 26px;
                      font-weight: 50;
-                      background-clip: text;
-                      -webkit-background-clip: text;
-                    
-                       
-                            @media (max-width: 800px){
-                              left: 140px;
-                             }   
-
+                     cursor: pointer;
+                     overflow: hidden;
+                     transition: transform 400ms, background-image 300ms 150ms;
                      }
                     
                           & .fas:hover { 
+                            transform: scale(1.15);
                             color: transparent; 
-                            background-image: linear-gradient($color-primary, $color-secondary);  
-                            opacity: 4;
-                          }
-                          
+                            background-image: linear-gradient($color-primary, $color-secondary);
+                            
+                          }            
        
-             } 
+              } 
         } 
 
         .new{
