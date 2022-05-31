@@ -4,14 +4,18 @@
   "description": "Project ohmyfood.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/styles.css"
+    "sass": "sass --watch ./sass/main.scss:.public/css/styles.css",
+    "prefix": "postcss .public/css/styles.css --use autoprefixer -d .public/css/prefixed/"
   },
+ 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gaellechoux/P_3_abtey_gaelle.git"
   },
   "author": "Abtey Gaelle",
   "license": "ISC",
+  "browerslist": "last 4 versions",
+
   "bugs": {
     "url": "https://github.com/Gaellechoux/P_3_abtey_gaelle/issues"
   },

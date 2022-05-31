@@ -26,7 +26,7 @@ width: 100%;
               }
         
               & img{
-                height: 200px;
+                height: 230px;
                 width: 100%;
                 object-fit: cover;
                 overflow: hidden;
@@ -43,26 +43,27 @@ width: 100%;
                    & .restaurants__name{
                     font-family: "Roboto-Bold", "cursive";
                     font-weight: bolder; 
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
                     }
 
                    & .fas{
-                     position: relative;
-                     top: 9px;
-                     left: 90px;
                      font-size: 26px;
                      font-weight: 50;
-                     cursor: pointer;
-                     overflow: hidden;
+                     background-clip: text;
+                     -webkit-background-clip: text;
                      transition: transform 400ms, background-image 300ms 150ms;
                      }
                     
                           & .fas:hover { 
                             transform: scale(1.15);
                             color: transparent; 
-                            background-image: linear-gradient($color-primary, $color-secondary);
-                            
-                          }            
-       
+                            background-image: linear-gradient($colour-primary, $colour-secondary);
+                            opacity: 4;
+                            font-weight: 900;
+                          }              
               } 
         } 
 
@@ -75,11 +76,12 @@ width: 100%;
             position: absolute;
             height: 30px;
             width: 90px;
-            background-color: $color-tertiary;
-            color: darken($color-tertiary, 35%);
-            text-align: center;
+            background-color: $colour-tertiary;
+            color: darken($colour-tertiary, 35%);
+            display: grid;
+            place-items: center;
             font-weight: bolder;
-            text-shadow: 1px 1px 2px $color-tertiary;
+            text-shadow: 1px 1px 2px $colour-tertiary;
             font-family: "Roboto-Bold", "cursive";
             border-radius: 3px;
             right: 7px;
