@@ -6,10 +6,7 @@
  }
 
 
- body{
-    margin: 0px;
-    font-family: "Roboto-Light", sans-serif;
-}
+
 /*Polices personnalisées */
 @font-face {
     font-family: 'Shrikhand-Regular';
@@ -41,4 +38,11 @@
     font-family: 'Roboto-Thin';
     src: url(police/Roboto-Thin.ttf);
     font-display: auto;
+} 
+
+body{
+    margin: 0px;
+    font-family: "Roboto-Light", sans-serif;
 }
+
+

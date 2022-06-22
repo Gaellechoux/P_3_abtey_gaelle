@@ -1,16 +1,24 @@
 .working{
     margin-bottom: 60px;
+    & h2{
+        font-family: "Roboto-Regular";
+        margin-left: 19px;
+    }
     & ol{
     counter-reset: compteliste;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
 
-         @media (max-width: 800px){
+         @media (max-width: 870px){
               flex-direction: column;
               margin: 0;
-              padding: 15px;
-        }    
+              padding: 63px;
+        }   
+        
+        @media (max-width:599px){
+            padding: 15px;
+      }  
     }
     & li{
         padding: 25px;
@@ -18,12 +26,13 @@
         background-color: $lightgray;
         @include working-shadow;
         font-weight: bolder;
-        font-family: "Roboto-Bold", "cursive";
+        font-family: "Roboto-Regular", "cursive";
 
         &:hover{
-            background-color: aqua;
-            cursor: pointer;
-            transform: scale(1.1);
+            background-color: #c300ff1a;
+            i{
+                color: $colour-primary;
+               }
         }
 
             &::before{
@@ -43,12 +52,14 @@
             }
             
 
-        & i.fas {
-            margin-right: 20px;
+        & i {
             color: gray;
+            margin-right: 20px;
+            margin-left: 12px;
+           
         }
 
-                    @media (max-width: 800px){
+                    @media (max-width: 870px){
                         margin: 15px;
                     }   
     }

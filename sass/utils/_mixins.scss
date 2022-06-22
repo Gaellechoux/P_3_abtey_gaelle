@@ -1,5 +1,23 @@
-@mixin working-shadow($colour: $lightgray){
-box-shadow: 1px 3px 3px 1px $colour;
+@mixin header {
+    &__image{
+        box-shadow: 0px 1px 10px grey;
+        text-align: center;
+        position: relative;
+        padding: 18px;
+        margin-right: auto; 
+            & img{
+            width: 150px;
+            height: auto;
+            object-fit: cover;  
+            }
+        }
+            @media (max-width: 599px){
+                margin-right: auto;
+                margin-left: auto;
+            }   
+}
+@mixin working-shadow($colour: $another-gray){
+box-shadow: 2px 3px 3px 2px $colour;
 }
 
 @mixin border($colour:$colour-tertiary) {
@@ -18,7 +36,31 @@ box-shadow: 1px 3px 3px 1px $colour;
     @include working-shadow;
     border: none;
     background: linear-gradient($colour-secondary, $colour-primary);
+    &:hover{
+        transform: scale(1.1);
+        opacity: 0.7;
+        @include working-shadow;
+    }
 }
+@mixin heart__btn {
+.fas{
+    font-size: 26px;
+    font-weight: 50;
+    margin-top: -7px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: transform 400ms, background-image 300ms 150ms;
+    }
+   
+         & .fas:hover { 
+           transform: scale(1.15);
+           color: transparent; 
+           background-image: linear-gradient($colour-primary, $colour-secondary);
+           opacity: 4;
+           font-weight: 900;
+         }              
+}
+
 
 @mixin menu-entrees__check {
 
@@ -51,6 +93,7 @@ box-shadow: 1px 3px 3px 1px $colour;
     }
     
 }
+
 
 
 

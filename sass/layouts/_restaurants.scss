@@ -1,7 +1,8 @@
 .restaurants{
 background-color: $lightgray;
 width: 100%;
-     h1 {
+     h2 {
+      font-family: "Roboto-Regular";
        padding-top: 60px;
        margin-left: 20px;
        font-weight: bolder;
@@ -13,6 +14,21 @@ width: 100%;
         width: 100%;
         align-items: center;
         padding: 0 25px 70px 30px;
+
+        @media (max-width: 870px){
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          padding: 0 20px 70px 20px;
+    }    
+
+              @media (max-width: 599px){
+                display: flex;
+                flex-direction: column;
+                
+              }    
+
+
         
    
         .restaurants__card{
@@ -26,45 +42,47 @@ width: 100%;
               }
         
               & img{
-                height: 230px;
+                height: 174px;
                 width: 100%;
                 object-fit: cover;
                 overflow: hidden;
                 border-radius: 15px 15px 0px 0px;
-                object-position: 0px;
-
+                object-position: bottom;
               }
-             
+
+              & .restaurants__card--image{
+                height: 174px;
+                overflow: hidden;
+              }
+
+              & .restaurants__card--image img{
+                height: 267px;
+                object-position: bottom;
+              }
+
+
               & .restaurants__description{
-                line-height: 10px;
+                line-height: 5px;
                 margin-left: -3px;
                 padding: 17px;
 
                    & .restaurants__name{
-                    font-family: "Roboto-Bold", "cursive";
+                    font-family: "Roboto-Regular", "cursive";
                     font-weight: bolder; 
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
 
                     }
-
-                   & .fas{
-                     font-size: 26px;
-                     font-weight: 50;
-                     background-clip: text;
-                     -webkit-background-clip: text;
-                     transition: transform 400ms, background-image 300ms 150ms;
-                     }
-                    
-                          & .fas:hover { 
-                            transform: scale(1.15);
-                            color: transparent; 
-                            background-image: linear-gradient($colour-primary, $colour-secondary);
-                            opacity: 4;
-                            font-weight: 900;
-                          }              
-              } 
+                   
+                    & .heart__btn{
+                      @include heart__btn;
+                      background-color: white;
+                      border: none;
+                    }
+             
+                      } 
+            
         } 
 
         .new{
@@ -87,10 +105,6 @@ width: 100%;
             right: 7px;
             top: 15px;    
         }
-        @media (max-width: 800px){
-            flex-direction: column;
-            padding: 0 20px 70px 20px;
-      }    
     
     }
 

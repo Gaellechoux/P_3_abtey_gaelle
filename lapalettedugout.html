@@ -10,11 +10,11 @@
     <title>La palette du goût</title>
 </head>
 <body>
-
+   <a href="index.html">
     <header>
-        <div class="header__image"><img src="images/ohmyfood.png"  alt="logo ohmyfood"/></div>
+      <div class="header__image header__arrow"><i class="fas fa-arrow-left"></i><img src="images/ohmyfood.png"  alt="logo ohmyfood"/></div>
     </header>
-
+   </a>
 
     <main class="dugout">
 
@@ -24,15 +24,15 @@
  <!-- Div conteneur3 -->       
 
              <div class="restaurant">
-                <h2 class="restaurant__name">La palette du goût<i class="fas fa-heart"></i></h2>
+                <h2 class="restaurant__name">La palette du goût<button class="heart__btn"><i class="fas fa-heart"></i></button></h2>
                 
             </div>
-   <main class="contenaire">
+   <div class="contenaire">
 
-        <section > 
+        <section class="menu-entrees"> 
+          <h4 class="menu-entrees__title">ENTREES</h4> 
                 <div class="menu">
-                    <h4 class="menu-entrees">ENTREES</h4>     
-                       <div class="menu__card">
+                       <div class="menu__card menu__card--1">
                           <div class="menu__item">
                             <div class="menu-entrees__name">Fricassée d'escargot</div>
                             <div class="menu-entrees__description">Au pimet d'espelette</div>
@@ -41,108 +41,99 @@
                             <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>   
                        </div>
 
-                       <div class="menu__card">
+
+                        <div class="menu__card menu__card--2">
                         <div class="menu__item">
                           <div class="menu-entrees__name">Foie gras de canard mi-cuit</div>
                           <div class="menu-entrees__description">Et ses copeaux de truffe noire</div>
                         </div>
                           <div class="menu-entrees__price">35€</div>
-                          <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
-                                   
-                       </div>
-                       <div class="menu__card">
+                          <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>         
+                       </div> 
+                       
+                       <div class="menu__card menu__card--3">
                         <div class="menu__item">
                           <div class="menu-entrees__name">Oeuf au plat</div>
                           <div class="menu-entrees__description">Assaisonné à la truffe sur lit de caviar</div>
                         </div>
                           <div class="menu-entrees__price">20€</div>
-                          <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
-                          
-                                  
+                          <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>       
                        </div>
+
                 </div> 
         </section>  
 
-        <section> 
-            <div class="menu">
-                <h4 class="menu-entrees">PLATS</h4>     
-                   <div class="menu__card">
+        <section class="menu-entrees"> 
+                <h4 class="menu-entrees__title">PLATS</h4> 
+                   <div class="menu"> 
+                   <div class="menu__card menu__card--4">
                     <div class="menu__item">
-                        <div class="menu-entrees__name">Tartare de poulpe acidulé</div>
-                        <div class="menu-entrees__description">Aux zests d'orange</div>
+                        <div class="menu-entrees__name">Filet de boeuf aux herbes</div>
+                        <div class="menu-entrees__description">Accompagné de sa ribambelle de légumes</div>
                     </div>
-                        <div class="menu-entrees__price">25€</div>
-                        <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
-                        
-                              
+                        <div class="menu-entrees__price">40€</div>
+                        <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>             
                    </div>
 
-                   <div class="menu__card">
+                   <div class="menu__card menu__card--5">
                     <div class="menu__item">
-                      <div class="menu-entrees__name">Tartare de poulpe acidulé</div>
-                      <div class="menu-entrees__description">Aux zests d'orange</div>
+                      <div class="menu-entrees__name">Parmentier de queue de boeuf</div>
+                      <div class="menu-entrees__description">À la truffe noire sur sa purée de panais</div>
                     </div>
-                        <div class="menu-entrees__price">25€</div>
-                        <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
-                      
-                             
+                        <div class="menu-entrees__price">35€</div>
+                        <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>                
                    </div>
-                   <div class="menu__card">
+
+                   <div class="menu__card menu__card--6">
                     <div class="menu__item">
-                      <div class="menu-entrees__name">Tartare de poulpe acidulé</div>
-                      <div class="menu-entrees__description">Aux zests d'orange</div>
+                      <div class="menu-entrees__name">Filet de turbot</div>
+                      <div class="menu-entrees__description">Aux agrumes</div>
                     </div>
-                      <div class="menu-entrees__price">25€</div>
-                      <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
-
-
-                      
-                            
+                      <div class="menu-entrees__price">44€</div>
+                      <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>             
                    </div>
             </div> 
     </section>
-    <section> 
-        <div class="menu">
-            <h4 class="menu-entrees">DESSERTS</h4>     
-               <div class="menu__card">
+    
+    <section class="menu-entrees"> 
+            <h4 class="menu-entrees__title">DESSERTS</h4>
+              <div class="menu">   
+               <div class="menu__card menu__card--7">
                 <div class="menu__item">
-                    <div class="menu-entrees__name">Tartare de poulpe acidulé</div>
-                    <div class="menu-entrees__description">Aux zests d'orange</div>
+                    <div class="menu-entrees__name">Paris-Brest</div>
+                    <div class="menu-entrees__description">Revisité</div>
                 </div>
-                    <div class="menu-entrees__price">25€</div>
+                    <div class="menu-entrees__price">18€</div>
                     <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
                     
                           
                </div>
 
-               <div class="menu__card">
+               <div class="menu__card menu__card--8">
                 <div class="menu__item">
-                  <div class="menu-entrees__name">Tartare de poulpe acidulé</div>
-                  <div class="menu-entrees__description">Aux zests d'orange</div>
+                  <div class="menu-entrees__name">Macaron au chocolat d'exception</div>
+                  <div class="menu-entrees__description">Et glace à la vanille de Madagascar</div>
                 </div>
-                  <div class="menu-entrees__price">25€</div>
-                  <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
-                  
-                         
+                  <div class="menu-entrees__price">22€</div>
+                  <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>            
                </div>
-               <div class="menu__card">
+
+               <div class="menu__card menu__card--9">
                 <div class="menu__item">
-                  <div class="menu-entrees__name">Tartare de poulpe acidulé</div>
-                  <div class="menu-entrees__description">Aux zests d'orange</div>
+                  <div class="menu-entrees__name">Mousse au chocolat</div>
+                  <div class="menu-entrees__description">Au piment d'Espelette et à la truffe noire</div>
                 </div>
-                  <div class="menu-entrees__price">25€</div>
-                  <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div> 
-                  
-                         
+                  <div class="menu-entrees__price">23€</div>
+                  <div class="menu-entrees__check"><i class="fas fa-check-circle"></i></div>         
                </div>
         </div> 
       </section>
-   </main>
-     <section class="order">
+   </div>
+     <div class="order">
                 <button class="order__title">
                     Commander
                 </button>
-     </section>
+     </div>
     </main>
 
     <!-- Footer -->    
@@ -155,7 +146,7 @@
           <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
           <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
           <li><a href="#">Mention légales</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="mailto:gaelle.abtey@gmail.com">Contact</a></li>
 
         </ul>     
  
