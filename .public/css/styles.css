@@ -488,31 +488,31 @@ body a {
   animation: menu 1000ms backwards;
 }
 .menu .menu__card--1 {
-  animation-delay: 200ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--2 {
-  animation-delay: 400ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--3 {
-  animation-delay: 600ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--4 {
-  animation-delay: 800ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--5 {
-  animation-delay: 1000ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--6 {
-  animation-delay: 1200ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--7 {
-  animation-delay: 1400ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--8 {
-  animation-delay: 1600ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--9 {
-  animation-delay: 1800ms;
+  animation-delay: 2000ms;
 }
 .menu .menu__card--10 {
   animation-delay: 2000ms;

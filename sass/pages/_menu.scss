@@ -109,7 +109,7 @@ body{
             animation: menu 1000ms backwards;
             @for $i from 1 through 10 {
                 &--#{$i}{
-                    animation-delay: 2000ms / 10 * $i;
+                    animation-delay: 2000ms;
                 }
             }
 
