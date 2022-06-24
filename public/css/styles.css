@@ -237,7 +237,7 @@ body {
   font-family: "Roboto-Regular", "cursive";
 }
 .working li:hover {
-  background-color: rgba(195, 0, 255, 0.1019607843);
+  background-color: rgba(147, 86, 220, 0.1411764706);
 }
 .working li:hover i {
   color: #9356DC;
