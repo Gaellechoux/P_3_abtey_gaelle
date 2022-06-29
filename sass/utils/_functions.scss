@@ -1,0 +1,7 @@
+@function light-gray($colour) {
+    @if (lightness($colour) > 50%){
+        @return lighten($colour, 5%);
+    }@else{
+        @return darken($colour, 5%);
+    }
+}

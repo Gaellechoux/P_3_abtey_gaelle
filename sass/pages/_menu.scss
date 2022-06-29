@@ -7,9 +7,12 @@ body{
     display: flex;
     justify-content: space-between;
     box-shadow: none;
-    @media (max-width: 599px){
-      margin-right: 92px;  
-    }  
+    @include mobile-only{
+      margin-right: 92px;   
+    }
+           
+     
+    
     
     & i{
         display: flex;
@@ -74,12 +77,11 @@ body{
      width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-                        
-                                    
-        @media (max-width: 599px){
-            flex-direction: column;
-            display: block;
-        }  
+    @include mobile-only{
+         flex-direction: column;
+         display: block;
+      }
+                          
 }
 
 .menu-entrees{
@@ -101,15 +103,15 @@ body{
             overflow: hidden;
             cursor: pointer;
             background-color: $colour-white;
-            border-radius: 15px;
+            border-radius: $size;
             margin: auto;
-            margin-bottom: 15px;
-            @include working-shadow(#e6e6e6);
+            margin-bottom: $size;
+            @include working-shadow;
             width: 330px;
-            animation: menu 1000ms backwards;
+            animation: menu $anim-dur backwards;
             @for $i from 1 through 10 {
-                &--#{$i}{
-                    animation-delay: 2000ms / 10 * $i;
+                &--#{$i} {
+                    animation-delay: $anim-delay * $i;
                 }
             }
 
@@ -145,6 +147,7 @@ body{
              .menu__card--10{
                 animation-delay: 3800ms; 
              }
+
             @keyframes menu{
                 0% {
                     transform: translateY(50%);
@@ -157,13 +160,12 @@ body{
                     opacity: 3;
                 }
             }
-            
-                                          
-            @media (max-width: 599px){
+
+            @include mobile-only{
                 margin: auto;
-                margin-bottom: 15px;
-                width: calc(100% - 54px);
-            }  
+                margin-bottom: $size ;
+                width: calc(100% - 54px); 
+              }
             
 
             & .menu__item{
@@ -204,7 +206,7 @@ body{
             & .menu-entrees__check {
                 background-color: $colour-tertiary;
                 width: 55px;
-                padding: 15px;
+                padding: $size;
                 margin-right: -55px;
                 transition-duration: 500ms;
                 transition-property: margin-right;

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* @mixin working-shadow($colour: $another-gray){
+box-shadow: 2px 3px 3px 2px $colour;
+}
+*/
 * {
   text-decoration: none;
   list-style: none;
@@ -53,7 +57,7 @@ body {
   height: auto;
   object-fit: cover;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .header {
     margin-right: auto;
     margin-left: auto;
@@ -114,14 +118,8 @@ body {
   right: 137px;
   box-shadow: 0 0 2px #b0a8ac;
   border-radius: 50%;
-  animation: loader__two 1.5s infinite;
 }
 
-@keyframes leader__two {
-  50% {
-    transform: translate(15px, -20px) scale(0, 55);
-  }
-}
 .loader > div:nth-child(3) {
   height: 15px;
   width: 15px;
@@ -131,14 +129,8 @@ body {
   right: 183px;
   box-shadow: 0 0 3px #b0a8ac;
   border-radius: 50%;
-  animation: leader__three 1.5s infinite;
 }
 
-@keyframes loader__three {
-  50% {
-    transform: translate(30px, 30px) scale(0, 3);
-  }
-}
 .city {
   display: flex;
   align-items: center;
@@ -176,14 +168,14 @@ body {
   border-radius: 25px;
   cursor: pointer;
   transform: scale(1.1);
-  box-shadow: 2px 3px 3px 2px #dedbdb;
+  box-shadow: 1px 6px 4px 1px #dedbdb;
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
 }
 .explore button:hover {
   transform: scale(1.1);
   opacity: 0.7;
-  box-shadow: 2px 3px 3px 2px #dedbdb;
+  box-shadow: 1px 6px 4px 1px #dedbdb;
 }
 
 .btn {
@@ -193,14 +185,14 @@ body {
   border-radius: 25px;
   cursor: pointer;
   transform: scale(1.1);
-  box-shadow: 2px 3px 3px 2px #dedbdb;
+  box-shadow: 1px 6px 4px 1px #dedbdb;
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
 }
 .btn:hover {
   transform: scale(1.1);
   opacity: 0.7;
-  box-shadow: 2px 3px 3px 2px #dedbdb;
+  box-shadow: 1px 6px 4px 1px #dedbdb;
 }
 
 .working {
@@ -223,7 +215,7 @@ body {
     padding: 63px;
   }
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .working ol {
     padding: 15px;
   }
@@ -232,7 +224,7 @@ body {
   padding: 25px;
   border-radius: 15px;
   background-color: #f3f3f3;
-  box-shadow: 2px 3px 3px 2px #dedbdb;
+  box-shadow: 1px 6px 4px 1px #edecec;
   font-weight: bolder;
   font-family: "Roboto-Regular", "cursive";
 }
@@ -292,7 +284,7 @@ body {
     padding: 0 20px 70px 20px;
   }
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .restaurants .restaurants__list {
     display: flex;
     flex-direction: column;
@@ -351,7 +343,7 @@ body {
   transform: scale(1.15);
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
-  opacity: 4;
+  opacity: 4px;
   font-weight: 900;
 }
 .restaurants .restaurants__list .new {
@@ -383,7 +375,7 @@ body a {
   justify-content: space-between;
   box-shadow: none;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .header__arrow {
     margin-right: 92px;
   }
@@ -446,7 +438,7 @@ body a {
   transform: scale(1.15);
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
-  opacity: 4;
+  opacity: 4px;
   font-weight: 900;
 }
 
@@ -456,7 +448,7 @@ body a {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .contenaire {
     flex-direction: column;
     display: block;
@@ -483,39 +475,39 @@ body a {
   border-radius: 15px;
   margin: auto;
   margin-bottom: 15px;
-  box-shadow: 2px 3px 3px 2px #e6e6e6;
+  box-shadow: 1px 6px 4px 1px #edecec;
   width: 330px;
   animation: menu 1000ms backwards;
 }
 .menu .menu__card--1 {
-  animation-delay: 200ms;
+  animation-delay: 100ms;
 }
 .menu .menu__card--2 {
-  animation-delay: 400ms;
+  animation-delay: 200ms;
 }
 .menu .menu__card--3 {
-  animation-delay: 600ms;
+  animation-delay: 300ms;
 }
 .menu .menu__card--4 {
-  animation-delay: 800ms;
+  animation-delay: 400ms;
 }
 .menu .menu__card--5 {
-  animation-delay: 1000ms;
+  animation-delay: 500ms;
 }
 .menu .menu__card--6 {
-  animation-delay: 1200ms;
+  animation-delay: 600ms;
 }
 .menu .menu__card--7 {
-  animation-delay: 1400ms;
+  animation-delay: 700ms;
 }
 .menu .menu__card--8 {
-  animation-delay: 1600ms;
+  animation-delay: 800ms;
 }
 .menu .menu__card--9 {
-  animation-delay: 1800ms;
+  animation-delay: 900ms;
 }
 .menu .menu__card--10 {
-  animation-delay: 2000ms;
+  animation-delay: 1000ms;
 }
 .menu .menu__card .menu__card--1 {
   animation-delay: 200ms;
@@ -557,7 +549,7 @@ body a {
     opacity: 3;
   }
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .menu .menu__card {
     margin: auto;
     margin-bottom: 15px;
@@ -633,14 +625,14 @@ body a {
   border-radius: 25px;
   cursor: pointer;
   transform: scale(1.1);
-  box-shadow: 2px 3px 3px 2px #dedbdb;
+  box-shadow: 1px 6px 4px 1px #dedbdb;
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
 }
 .order button:hover {
   transform: scale(1.1);
   opacity: 0.7;
-  box-shadow: 2px 3px 3px 2px #dedbdb;
+  box-shadow: 1px 6px 4px 1px #dedbdb;
 }
 
 .footer {

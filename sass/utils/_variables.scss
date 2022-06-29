@@ -1,7 +1,14 @@
 $lightgrey: #e0dfdf;
 $lightgray: #f3f3f3;
-$another-gray: #dedbdb;
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 $colour-white: #fff;
+$anim-dur: 1000ms;
+$anim-delay: calc($anim-dur / 10);
+$size: 15px;
+
+$breakpoints: (
+    mobile: 599px
+);
+

@@ -20,14 +20,13 @@ width: 100%;
           grid-template-columns: repeat(2, 1fr);
           gap: 2rem;
           padding: 0 20px 70px 20px;
-    }    
+        }    
 
-              @media (max-width: 599px){
-                display: flex;
-                flex-direction: column;
-                
-              }    
 
+        @include mobile-only{
+           display: flex;
+          flex-direction: column;
+        }
 
         
    
@@ -46,7 +45,7 @@ width: 100%;
                 width: 100%;
                 object-fit: cover;
                 overflow: hidden;
-                border-radius: 15px 15px 0px 0px;
+                border-radius: $size $size 0px 0px;
                 object-position: bottom;
               }
 
